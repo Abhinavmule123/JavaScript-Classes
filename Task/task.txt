@@ -1,0 +1,9 @@
+1. Declare different variables with different data types likes string , number , float ,
+display it in document.write() method
+
+
+2. get the input name form the user and display in alert format 
+
+3. get the input from the user and display it's data type. 
+
+4. compare two variables and display result in alert dialog box.
