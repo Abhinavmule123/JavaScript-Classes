@@ -7,12 +7,11 @@
 // name = "abhinav";  // value assign 
 // var name = "abhinav";
 // let name = "abhinav";
-// const name = "abhinav";
-
+// const name = "abhinav"
 // var num1 = 12;
 // let num2 = 13;
 // const pi = 3.14;
-
+  
 // var and let -  you can change the value of var,let 
 // const -  never change 
 
