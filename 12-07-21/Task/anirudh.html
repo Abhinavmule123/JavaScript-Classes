@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task2</title>
+</head>
+<body> 
+    <script src="script.js"></script>
+    <script> 
+    document.write( "</br>"+"this is first task "+"</br>");   
+ for (let index = 10; index>=1; index--) {
+     document.write(index);
+    
+ }
+
+ document.write("</br>"+"this is second task "+"</br>");
+ for (let i=1; i<=100; i++) {
+    if (i%2==0) {
+        document.write(i+" "); 
+    }
+}
+ document.write("</br>"+"this is third task "+"</br>");
+        for (let index = 1; index <=100; index++) {
+       if (index%2!=0) {
+           document.write(index+" ");
+       }
+       
+   }
+ document.write("</br>"+"this is fourth task "+"</br>");
+ let a=0;
+   for (let index = 1; index <= 10; index++) {
+       a=a+index;
+       
+   }
+   document.write(a);
+   
+ document.write("</br>"+"this is fifth task "+"</br>");
+   let b=0;
+   for (let index = 1; index <= 10; index++) {
+    if (index%2==0) {
+        b=b+index;
+    }
+}
+document.write(b);
+
+document.write("</br>"+"this is sixth task "+"</br>");
+let c=0;
+   for (let index = 1; index <= 10; index++) {
+    if (index%2!=0) {
+        c=c+index;
+    }
+}
+document.write(c);
+
+document.write("</br>"+"this is seventh task "+"</br>");
+
+let d=5;
+let x;
+for (let index = 1; index <=10; index++) {
+    
+ x=d*index;
+ document.write(x+" ");
+}
+document.write("</br>"+"this is eight task "+"</br>");
+for(i = 'A'.charCodeAt();
+    i <= 'Z'.charCodeAt(); i++)
+{
+     
+    document.write(String.fromCharCode(i)  + " ");
+}
+document.write("</br>"+"this is ninth task "+"</br>");
+let z = window.prompt("enter the number less than 4 digit");
+if (z<=9) {
+    document.write("entered no has 1 digit");
+} else {
+    if (z<=99) {
+        document.write("entered no has 2 digit");
+    } else {
+        document.write("entered no has 3 digit");
+    }
+}
+
+document.write("</br>"+"this is tenth task "+"</br>");
+let p= window.prompt("enter the number");
+let q=p%10;
+document.write("the last digit of entered no is "+ q +"</br>");
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
