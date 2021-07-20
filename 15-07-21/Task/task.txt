@@ -1,0 +1,3 @@
+problem statement :- 
+                  make arrow function which takes input from the user store it in the Array . takes at least 5 input.
+                  make second arrow function which display the store data on screen .  
