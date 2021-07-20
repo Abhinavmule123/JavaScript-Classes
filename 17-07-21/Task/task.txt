@@ -1,0 +1,9 @@
+problem statement :- 
+        1.make arrow function which takes input from the user store it in the Array . takes at least 10 input.
+        2.add one number in last of the array dynamically .
+        3.delete the first element in array dynamically.
+        4.then reverse the array.
+        5.delete the 3 and 4 indexing number element.
+        6.filter the given array and get even number only .
+        7.after filteration check the every element array satisfy the condition or not .
+        8. if yes then sort it.
