@@ -1,0 +1,10 @@
+Task 1 :-
+         make minimum 4 object in the array which have the properties like name,class,section .  show them using forEach  loop.
+Task 2:-
+        add two numebr and display the result . 
+        as "The Addition of two number is ji additio yenar te display kara ithe"
+        using the concept of string interploation. 
+Task 3:-
+       " This is my country india."  
+        In the above string check the presence of india word in the string , print string is present if not then print string is not present. 
+       
