@@ -1,0 +1,4 @@
+Task :- 
+        1.take the input from the user and store it in variable check it is valid number or not.
+        2.take the input from the user and store it in variable check it is infinite or not .
+        3.take the input from the user and store it in variable convert it into binary , octal , hexadecimal.
