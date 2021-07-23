@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF9-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Methods</title>
+</head>
+<body>
+    <script >
+        let student = {names : ["ram","aachu","sam"],class:[11,12,11],section:["A","B","C"],city:["amravati","nagpur","kolkata"] };
+        student.names.forEach((value)=>{
+        console.log(value);
+        });
+
+        let num1 = 23;
+        let num2 = 33;
+        let add = num1+num2;
+        document.write(`addition is ${add}`);
+
+        // let ab =  ("This is my country india");
+        // let c = ab.search("india");
+        // console.log(c);
+
+        let ab =("This is my country india"); 
+        if(ab.indexOf("india") != -1){
+        console.log("it is present");
+        }else{
+        console.log("it is not present");
+        }
+    </script>
+
+</body>
+</html>

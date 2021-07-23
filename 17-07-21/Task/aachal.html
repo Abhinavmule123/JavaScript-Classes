@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>17-07-21 task</title>
+</head>
+<body>
+    <script>
+        let getInput = () =>
+        {
+            let a = window.prompt("enter the values");
+            return a;
+        
+        }
+        let b = [];
+        for(a=0 ; a<=10;a++)
+        {
+            b[a]= getInput();
+        }
+        console.log(b);
+        b.push("MADAM");
+        console.log(b);
+
+        b.reverse();
+        console.log(b);
+        b.splice(1,5);
+        console.log(b);
+
+        let even_arr = b.filter((arrayelement)=>{
+        return arrayelement%2==0;
+
+        });
+        console.log(even_arr);
+        let check = b.every((arrayelement) => {
+        return arrayelement>=1;
+        });
+        console.log(check);
+
+
+
+    </script>
+</body>
+</html>
