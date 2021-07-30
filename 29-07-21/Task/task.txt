@@ -1,0 +1,31 @@
+ <table width="500" height="250" align="center" border="1" style="border-collapse: collapse;margin-top: 50px;">
+           <tr>
+            <th>Student ID</th>
+            <th>Student Name</th>
+            <th>Student Stream</th>
+            <th>Student Class</th>
+           </tr>
+           <tr>
+                <td>1</td>
+                <td>Rahul</td>
+                <td>Science</td>
+                <td>11</td>
+           </tr>
+           <tr>
+            <td>2</td>
+            <td>Rohan</td>
+            <td>Commerce</td>
+            <td>10</td>
+       </tr>
+        <tr>
+            <td>3</td>
+            <td>Soham</td>
+            <td>Arts</td>
+            <td>12</td>
+    </tr>
+        <tr>
+            <td colspan="4" align="center">Thank You !</td>
+        </tr>
+        </table>
+        
+You have to make this table using JavaScript append in html page
