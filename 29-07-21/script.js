@@ -25,15 +25,15 @@
 // console.log(ul.children);
 
 
-// let h1tag =  document.createElement("H1"); // for element/tag creation 
-// let dcomment = document.createComment("This is dynamic h1 tag created");
-// let txt = document.createTextNode("Hello World");
-// // console.log(h1tag);
-// // console.log(dcomment);
-// // console.log(txt);
+let h1tag =  document.createElement("H1"); // for element/tag creation 
+let dcomment = document.createComment("This is dynamic h1 tag created");
+let txt = document.createTextNode("Hello World");
+console.log(h1tag);
+console.log(dcomment);
+console.log(txt);
 // // targetElement.append(sourceElement);
 // h1tag.append(dcomment);
-// h1tag.append(txt);
+// h1tag.append(txt);/
 // console.log(h1tag);
 //  let appendTag = document.getElementById("heading");
 /// appendTag.append(h1tag);
@@ -63,7 +63,7 @@
 
 // innerHTML , outerHTML , innerText, 
 
-let h1tag = document.getElementById("head");
+//let h1tag = document.getElementById("head");
 // h1tag.content1 = "tags";
 
 // h1tag.setAttribute("align","center"); 

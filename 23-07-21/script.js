@@ -43,4 +43,4 @@ function main(commands){
     });
 }
             
-main(["add table 10","add chair 30","add sofa 20","remove chair","allshow","show table"]);
+main(["add table 10","add chair 30","add sofa 20","remove chair","allshow","show table"]); 
