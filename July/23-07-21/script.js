@@ -1,9 +1,9 @@
 const inventoryObject = ()=>{
     const inventory =[];
 
-    const add = (item)=>{
-        if(!(inventory.includes(item)))
-            inventory.push(item);
+    const add = (item,count)=>{
+        if(!(inventory.includes(item.itemName)))
+            inventory.push({itemName:item,itemCount:count});
     }
 
     const remove = (item)=>{
@@ -33,8 +33,9 @@ function main(commands){
            const splitCommand =  currentParameter.split(" ");
            const currentCommand  = splitCommand[0];
            const item =  splitCommand[1];
+           const count = splitCommand[2];
            if(currentCommand == "add"){
-                inventory.add(item);
+                inventory.add(item,count);
            }else if(currentCommand == "remove"){
                 inventory.remove(item);
            }else if(currentCommand == "show"){
@@ -43,4 +44,4 @@ function main(commands){
     });
 }
             
-main(["add table 10","add chair 30","add sofa 20","remove chair","allshow","show table"]);
+main(["add table 11","add chair 11","add sofa 11","remove chair","show"]);

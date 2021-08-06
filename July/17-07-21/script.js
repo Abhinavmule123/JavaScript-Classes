@@ -119,7 +119,7 @@
 // console.log(ab);
 
 // let ab = [6,8,2,1,4];
-//  ab.sort(function(a,b){return b-a;});
+//  ab.sort(function(a,b){return a-b;});
 // console.log(ab);
 
 
