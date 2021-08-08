@@ -1,9 +1,9 @@
 const inventoryObject = ()=>{
     const inventory =[];
 
-    const add = (item,count)=>{
-        if(!(inventory.includes(item.itemName)))
-            inventory.push({itemName:item,itemCount:count});
+    const add = (item)=>{
+        if(!(inventory.includes(item)))
+            inventory.push(item);
     }
 
     const remove = (item)=>{
@@ -44,4 +44,4 @@ function main(commands){
     });
 }
             
-main(["add table 11","add chair 11","add sofa 11","remove chair","show"]);
+main(["add table","add chair","add sofa","remove chair","show"]);

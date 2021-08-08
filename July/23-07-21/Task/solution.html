@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>solution </title>
+</head>
+<body>
+    <script>
+        function inventoryFun(){
+            let inventory = [];
+            
+            let add = (item,count)=>{
+                let itemobj = inventory.find((items)=>{
+                    return items.itemName == item;                
+                });
+                if(!itemobj){
+                    inventory.push({itemName : item,itemCount:count});
+                }
+             
+            };
+
+            let update = (item,count)=>{
+               let index =  inventory.findIndex((element)=> element.itemName==item);
+               if(index != -1){
+                   inventory[index].itemCount = count;
+                   console.log("item updated");
+                  
+               }
+            };
+
+            let remove = (item)=>{
+                let index =  inventory.findIndex((element)=> element.itemName==item);
+               if(index != -1){
+                   inventory.splice(index,1);
+                   console.log("item deleted");
+                   console.log(inventory);
+               }
+            };
+
+            let showall = ()=>{
+                inventory.forEach((element)=>{
+                    console.log("All Items With their counts");
+                    console.log(element.itemName+"  "+element.itemCount);
+                });
+            };
+
+            let show = (item)=>{
+                let index =  inventory.findIndex((element)=> element.itemName==item);
+               if(index != -1){
+                    console.log(inventory[index].itemName+"  "+inventory[index].itemCount);
+               }
+            };
+            return {
+                add : add,
+                update : update,
+                remove : remove,
+                showall : showall,
+                show : show
+            };
+        }
+
+
+
+        function main(commands){
+            let inventoryObj = inventoryFun();
+            commands.forEach((currentParameter)=>{
+                let currentData =  currentParameter.split(" ");
+                let currentCommand = currentData[0];
+                let currentItem = currentData[1];
+                let currentCount = currentData[2];
+                if(currentCommand == "add"){
+                    inventoryObj.add(currentItem,currentCount);
+                }else if(currentCommand == "update"){
+                    inventoryObj.update(currentItem,currentCount);
+                }else if(currentCommand == "remove"){
+                    inventoryObj.remove(currentItem);
+                }else if(currentCommand == "showall"){
+                    inventoryObj.showall();
+                }else if(currentCommand == "show"){
+                    inventoryObj.show(currentItem);
+                }
+            });
+        }           
+    main(["add table 11","update table 20","add chair 25","show table"]);
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>solution</title>
+</head>
+<body>
+    <script>
+        //  1.take the input from the user and store it in variable check it is valid number or not.
+        // let userInput =  window.prompt("Enter no");
+        // if(isNaN(userInput)){
+        //     alert("not a valid no");
+        // }else{
+        //     alert("Valid no");
+        // }
+
+        //   2.take the input from the user and store it in variable check it is infinite or not .
+        // let userInput = window.prompt("Enter no");
+        // if(isFinite(userInput)){
+        //     alert("no is finite");
+        // }else{
+        //     alert("no is infinite");
+        // }
+
+        //    3.take the input from the user and store it in variable convert it into binary , octal , hexadecimal.
+        let userInput = Number(window.prompt("Enter a number to convert"));
+        document.write(userInput.toString(2)+"<br>"+userInput.toString(8)+"<br>"+userInput.toString(16))
+    </script>
+</body>
+</html>
