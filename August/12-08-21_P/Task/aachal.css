@@ -1,0 +1,151 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid black;
+    float: left;
+}
+#brand-name{
+    margin: 0;
+    padding: 0;
+    font-size: 35px;
+    font-family: sans-serif;
+    color: rgb(240, 118, 199);
+    margin: 20px;
+    margin-left: 35px;
+    padding-left: 20px;
+    float: left;
+}
+
+#menu{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: right;
+    margin-top: 6px;
+}
+
+#menu li{
+    display: inline-block;
+    font-size: 20px;
+    font-family: cursive;
+    padding: 10px 19px;
+    margin: 10px;
+    transition: 1s;
+}
+
+#menu li a{
+    text-decoration: none;
+    color: black;
+}
+
+#menu li:hover{
+    background-color: rgb(250, 110, 243);
+}
+#menu li a:hover{
+    color: white;
+}
+
+section{
+    width: 100%;
+    height: auto;
+    float: left;
+}
+
+#todo-task{
+    width: 40%;
+    height: auto;
+    float: left;
+    margin-left: 5%;
+    margin-top: 2%;
+    box-shadow: 3px 5px 13px grey;
+    padding-bottom: 10px;
+}
+
+#completed-task{
+    width: 40%;
+    height: auto;
+    float: left;
+    margin-left: 10%;
+    margin-top: 2%;
+    box-shadow: 3px 5px 13px grey;
+    padding-bottom: 10px;
+}
+
+#todo-task h1,#completed-task h1{
+    color: rgb(247, 110, 217);
+    text-align: center;
+    font-family: cursive;
+}
+
+#modal{
+    width: 350px;
+    height: auto;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: white; 
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    display: none;
+}
+
+#modal label{
+    font-size: 20px;
+    margin-left: 5px;
+}
+#modal #todo{
+    width: 95%;
+    padding: 8px 20px;
+    border: 1px solid #ccc;
+    margin: 10px 5px;
+}
+#modal #add-btn{
+    background-color: #f30a9a;
+    color: white;
+    padding: 10px 15px ;
+    margin-top: 5px;
+    border: none;
+    margin-left: 5px;
+    font-size: 18px;
+}
+
+#background{
+    width: 100%;
+    min-height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+#manage-todo{
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+    padding: 10px 15px;
+    position: absolute;
+    top: 40%;
+    left: -50%;
+    transform: translate(-50%,-50%);
+    transition: 1s;
+    background-color: white;
+}
+
+#todo-list{
+    width: 100%;
+    border-collapse: collapse;
+}
+#todo-list{
+    font-size: 20px;
+    font-family: cursive;
+}

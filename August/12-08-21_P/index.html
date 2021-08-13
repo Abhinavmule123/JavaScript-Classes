@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+</head>
+<body>
+    <header>
+        <h1 id="brand-name" class="animate__animated animate__heartBeat animate__slower animate__infinite">Abhinav's Todo App</h1>
+
+        <ul id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#" id="add-todo-btn">Add Todo</a></li>
+            <li><a href="#" id="manage-btn">Manage Todo</a></li>
+        </ul>
+    </header>
+    <section>
+        <div id="todo-task">
+            <h1>Today's Task</h1>
+            <hr>
+        </div>
+
+        <div id="completed-task">
+            <h1>Today's Completed Task</h1>
+            <hr>
+        </div>
+    </section>
+
+    <!-- start add todo modal -->
+    <div id="modal">
+        <form>
+            <label for="add">Add Your Todo</label> <br>
+            <input type="text" name="todo" id="todo" placeholder="Enter Todo"> <br>
+            <input type="submit" value="Add" id="add-btn">
+        </form>
+    </div>
+    <!-- end add todo modal -->
+
+    <!-- black background -->
+        <div id="background">
+
+        </div>
+    <!-- end black background -->
+
+    <!-- start of manage todo  -->
+        <div id="manage-todo">
+            <table id="todo-list" border="1">
+                <tr>
+                    <th>Sr. No</th>
+                    <th>Todo's</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </table>
+        </div>
+    <!-- end of manage todo -->
+    <script src="script.js"></script>
+</body>
+</html>

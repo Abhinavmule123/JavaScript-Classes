@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>solution</title>
+</head>
+<body>
+    <script>
+        //  1.make arrow function which takes input from the user store it in the Array . takes at least 10 input.
+        let arr = [];
+        for(i=0;i<10;i++){
+            arr[i] = window.prompt("Enter ten Numbers");
+        }
+        console.log(arr);
+
+        // 2.add one number in last of the array dynamically .
+        arr.push(12);
+
+        //   3.delete the first element in array dynamically.
+        arr.shift();
+
+
+       // 4.then reverse the array.
+       arr.reverse();
+
+        // 5.delete the 3 and 4 indexing number element.
+        arr.splice(3,2);
+
+        //  6.filter the given array and get even number only .
+        let arr2 = arr.filter((element=>{
+            return  element%2==0;
+        }));
+
+        //7.after filteration check the every element array satisfy the condition or not .
+        let check_condition = arr2.every((element)=>{
+            return element%2==0;
+        })
+        if(check_condition){
+            document.write("condition satisfy");
+        }else{
+            document.write("condition not satisfy");
+        }
+
+         let arr3 = arr2.sort(function(a,b){
+            return a-b;
+        })
+        document.writeln(arr3);
+    </script>
+</body>
+</html>

@@ -15,12 +15,10 @@
     let txt = document.createTextNode("Student ID");
     thtag.append(txt);
     trtag.append(thtag);
-    table.append(trtag);
     
     let th1tag = document.createElement("th");
     let txt1 = document.createTextNode("Name");
     th1tag.append(txt1);
-
 
     let th2tag = document.createElement("th");
     let txt2 = document.createTextNode("stream");
@@ -34,8 +32,7 @@
     trtag.append(th1tag);
     trtag.append(th2tag);
     trtag.append(th3tag);
-    console.log(trtag);
-    table.append(trtag);
+    console.log(trtag)
 
 
 
@@ -119,7 +116,6 @@
     let th16tag = document.createElement("th");
     let text =document.createTextNode("align","center" , "Thanks You!");
     //th16tag.append(th16tag);
-    //th.colspan="2";
     th16tag.append(text);
     tr5.append(th16tag);
     console.log(tr5);

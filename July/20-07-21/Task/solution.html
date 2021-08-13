@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>solution</title>
+</head>
+<body>
+    <script>
+        //Task 1 :-
+        //  make minimum 4 object in the array which have the properties like name,class,section .  show them using forEach  loop
+
+        let student = [{name :"abhinav",section :"B",class:1},
+        {name:"kartik",section:"C",class:2},
+        {name:"rahul",section:"A",class:2},
+        {name: "rohan",section:"A",class:1}
+    ];
+        student.forEach((element)=>{
+            console.log(element);
+        });
+
+
+
+        //2nd task
+        // let num1 = 56;
+        // let num2 = 20;
+        // let add = num1+num2;
+        // document.write(`addition is ${add}` );
+
+
+        // Task 3:-
+    //    " This is my country india."  
+    //     In the above string check the presence of india word in the string , print string is present if not then print string is not present. 
+        let str = " This is my country india.";
+        if(str.indexOf("india") != -1){
+            alert("string is present");
+        }else{
+            alert("string is not present");
+        }
+
+    </script>
+</body>
+</html>
