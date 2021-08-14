@@ -23,6 +23,11 @@
         <div id="todo-task">
             <h1>Today's Task</h1>
             <hr>
+            <ol id="todoList">
+                <!-- <li><p>Watching movie</p> <button class="mark-btn">Mark</button></li>
+                <li><p>Watching movie</p> <button class="mark-btn">Mark</button></li> -->
+                
+            </ol>
         </div>
 
         <div id="completed-task">
@@ -31,7 +36,7 @@
         </div>
     </section>
     <div id="modal">
-        <form>
+        <form  id="add-todo-form">
             <label for="add">Add Your Todo</label> <br>
             <input type="text" name="todo" id="todo" placeholder="Enter Todo"> <br>
             <input type="submit" value="Add" id="add-btn">
@@ -51,6 +56,10 @@
                     <th>Delete</th>
                 </tr>
             </table>
+        </div>
+
+        <div id="toast" class="animate__animated animate__bounceIn">
+            <p>Please enter your todo</p>
         </div>
    
     <script src="aachal.js"></script>
