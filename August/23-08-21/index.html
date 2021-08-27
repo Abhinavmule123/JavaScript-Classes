@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validations</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+    <div> 
+        <div>
+            <h2>Signup Form</h2> <br>
+            <form method="POST" id="signup-form">
+                <input type="text" name="firstname" id="firstname" required="required" placeholder="Firstname">
+                <i class="fa fa-check" style="color: green;font-size: 30px;margin-left: 5px; display: none;" id="firstname-tick"></i>
+
+                <div id="firstname-notice" class="animate__animated animate__flash animate__infinite animate__slow">
+                   <!-- <i class="fa fa-exclamation" style="font-size: 15px;"></i> This field is required ! -->
+                </div>
+
+                <input type="text" name="lastname" id="lastname" required="required" placeholder="Lastname"> 
+                <i class="fa fa-check" style="color: green;font-size: 30px;margin-left: 5px; display: none;" id="firstname-tick"></i>
+                
+                <div id="lastname-notice" class="animate__animated animate__flash animate__infinite animate__slow">
+                    <!-- <i class="fa fa-exclamation" style="font-size: 15px;"></i> This field is required ! -->
+                 </div>
+
+                <input type="number" name="mobile" id="mobile" required="required" placeholder="Mobile No" > 
+                <i class="fa fa-check" style="color: green;font-size: 30px;margin-left: 5px; display: none;" id="mobile-tick"></i>
+                
+                <div id="mobile-notice" class="animate__animated animate__flash animate__infinite animate__slow">
+                    <!-- <i class="fa fa-exclamation" style="font-size: 15px;"></i> This field is required ! -->
+                 </div>
+
+                <input type="email" name="email" id="email" required="required" placeholder="E-Mail">  
+                <i class="fa fa-check" style="color: green;font-size: 30px;margin-left: 5px; display: none;" id="email-tick"></i>
+                
+                <div id="email-notice" class="animate__animated animate__flash animate__infinite animate__slow">
+                    <!-- <i class="fa fa-exclamation" style="font-size: 15px;"></i> This field is required ! -->
+                 </div>
+
+                <input type="password" name="password" id="password" required="required" placeholder="Password">
+                <i class="fa fa-check" style="color: green;font-size: 30px;margin-left: 5px; display: none;" id="password-tick"></i>
+                <br>
+                <div id="password-notice" class="nimate__animated animate__flash animate__infinite animate__slow" style="color: red;margin-left: 20px;">
+
+                </div>
+                <small style="margin-left: 20px;">password must contain small and capital letters,numbers <br>&nbsp;&nbsp;&nbsp;&nbsp; special symbols and length greater 8 character</small>
+                 <br>
+                <input type="password" name="c_password" id="c_password" required="required" placeholder="Repeat Password"> 
+                <i class="fa fa-check" style="color: green;font-size: 30px;margin-left: 5px; display: none;" id="rpassword-tick"></i>
+                <div id="rpassword-notice" class="nimate__animated animate__flash animate__infinite animate__slow" style="color: red;margin-left: 20px;">
+
+                </div>
+                <br>
+                <textarea name="address" id="address" cols="29" rows="6" required="required" placeholder="Your Address"></textarea>
+               <i class="fa fa-check" style="color: green;font-size: 30px;margin-left: 5px; display: none;" id="firstname-tick"></i>
+                
+                <div id="address-notice" class="animate__animated animate__flash animate__infinite animate__slow">
+                    <!-- <i class="fa fa-exclamation" style="font-size: 15px;"></i> This field is required ! -->
+                 </div>
+                
+                <button type="submit" id="submit-btn">Submit</button>
+            </form>
+        </div>
+    <div>
+        <div style="position: absolute; top: 55%;left:2.5%;z-index: 11;background-color: white;width: 280px;box-shadow: 2px 5px 10px black;color:red ;font-size: 15px;padding: 10px;display: none;" id="password-message">
+            <p id="upper-notice">
+                UpparCase 
+             </p>
+             <p id="lower-notice">
+               LowerCase
+             </p>
+             <p id="ss-notice">
+                 special symbols
+             </p>
+             <p id="num-notice">
+                 Numbers
+             </p>
+             <p id="length-notice">
+                 length greater 8 character
+             </p>
+
+        </div>
+       
+    <script src="script.js"></script>
+</body>
+</html>
