@@ -174,25 +174,66 @@ section{
     line-height: 30px;
 }
 
-#todoList li{
+#todoList li, #completedList li{
     font-size: 18px;
     font-family: cursive;
     font-weight: bold;
     
 }
-#todoList li p{
-    margin: 0;
-    padding: 0;
+#todoList p, #completedList p{
+    display: inline-block;
 }
-#todoList li .mark-btn{
+#todoList li .mark-btn , #completedList .unmark-btn{
     padding: 10px 16px;
     color: white;
     background-color:palevioletred;
     border: none;
     cursor: pointer;
+    display: inline-block ;
+    transition: 1s;
+    margin-left: 50% ;
 }
 #todoList li .mark-btn:hover{
     color: white;
     background-color: palevioletred;
 }
+#completedList li .unmark-btn:hover{
+
+    color: white;
+    background-color:palevioletred;
+}
+#todo-list th,td{
+    padding: 10px 16px;
+
+}
+#completedList li:hover{
+    color: white;
+    background-color:palevioletred;
+}
+#todo-list .edit-btn, #todo-list .update-btn{
+    padding: 10px 16px;
+    font-size: 17px;
+    border: none;
+    background-color: rgb(45, 197, 182);
+    color: white;
+    cursor: pointer ;
+}
+#todo-list .del-btn{
+    padding: 10px 16px;
+    font-size: 17px;
+    border: none;
+    background-color: tomato;
+    color: white;
+    cursor: pointer;
+    transition: 1s;
+}
+
+#todo-list .edit-btn:hover{
+    border-radius: 15px;
+}
+#todo-list .del-btn:hover{
+    border-radius: 15px;
+}
+
+
 
