@@ -1,0 +1,43 @@
+h2{
+    font-size: 30px;
+    font-family: cursive;
+    margin: 0;
+    padding: 0;
+    padding: 5px 10px;
+    margin-left: 20px;
+}
+
+input{
+    width: 250px;
+    padding: 10px 15px;
+    margin-left: 20px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+textarea{
+    margin-left: 20px;
+    font-size: 15px;
+    padding: 10px 15px;
+}
+
+#submit-btn{
+    padding: 10px 15px;
+    border: none;
+    color: white;
+    background-color: teal;
+    margin-left: 20px;
+    font-size: 16px;
+    transition: 1s;
+}
+
+#submit-btn:hover{
+    border-radius: 8px;
+    box-shadow: 2px 5px 10px grey;
+}
+
+#firstname-notice,#lastname-notice,#mobile-notice,#address-notice,#email-notice{
+    font-size: 15px;
+    color: red;
+    margin: 10px 30px;
+}

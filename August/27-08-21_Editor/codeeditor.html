@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front End Code Editor</title>
+    <style>
+        .container{
+            width: 100%;
+        }
+        .editor{
+            width: 42%;
+            height: 555px;
+            box-shadow: 2px 5px 12px grey;
+            float: left;
+            margin-left: 5%;
+        }
+        .result{
+            width: 42%;
+            height: 550px;
+            box-shadow: 2px 5px 12px grey;
+            float: left;
+            margin-left: 5%;
+        }
+        #code{
+            border: none;
+            outline: none;
+            padding: 10px;
+            font-size: 20px;
+            font-family: century gothic;
+        }
+        #code:focus{
+            border: none;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="cotainer">
+        <h1 align="center" style="font-size: 30px;font-family: sans-serif;color: rgb(16, 74, 129);text-shadow: 2px 2px 5px white;">Abhinav Code Editor</h1>
+        <hr>
+        <div class="editor">
+            <textarea name="code" id="code" cols="62" rows="22" style="outline: none;">
+
+            </textarea>
+        </div>
+        <div class="result" id="output">
+
+        </div>
+        <button id="run-btn" style="color:white;padding: 10px 15px;border: none;font-size: 16px;background-color: green;position: absolute;top: 90%;left: 80px;cursor: pointer;">Run</button>
+    </div>
+
+    <script>
+        let runBtn = document.getElementById("run-btn");
+        runBtn.onclick = function(){
+            let code = document.getElementById("code").value.trim();
+            let output = document.getElementById("output");
+            output.innerHTML = code;            
+        }
+    </script>
+</body>
+</html>
