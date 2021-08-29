@@ -32,3 +32,4 @@ if(typeof(Storage) !== "undefined"){
 else{
     alert("not supported !");
 }
+
