@@ -44,4 +44,8 @@ function main(commands){
     });
 }
             
+<<<<<<< HEAD:23-07-21/script.js
+main(["add table 10","add chair 30","add sofa 20","remove chair","allshow","show table"]); 
+=======
 main(["add table","add chair","add sofa","remove chair","show"]);
+>>>>>>> 2b1ed59e317be79cc060aa2346b2b2ef07ee40e7:July/23-07-21/script.js

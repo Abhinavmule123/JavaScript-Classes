@@ -28,4 +28,4 @@
         </tr>
         </table>
         
-You have to make this table using JavaScript append in html page
+You have to make this table using JavaScript append in html page 
