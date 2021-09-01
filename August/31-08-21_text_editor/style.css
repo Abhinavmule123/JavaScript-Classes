@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #cfcfcf;
+}
+*{
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: 150px;
+    background-color: rgb(44, 88, 221);
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+}
+
+header h1{
+    padding: 0;
+    margin: 0;
+}
+
+.btn{
+    margin-top: 15px;
+    padding: 10px 15px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 15px;
+}
+
+#page{
+    width: 60%;
+    height: 550px;
+    background-color: white;
+    margin-left: 20%;
+    margin-top: 1%;
+    font-size: 20px;
+    font-family: sans-serif;
+    padding: 5px;
+}
+#page:focus{
+    outline: none;
+}
