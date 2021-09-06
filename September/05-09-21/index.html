@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promises</title>
+</head>
+<body>
+    <script>
+        // javascript is single threaded  
+        
+        // function first(num){
+        //     console.log("this is first function     "+num);
+        // }
+
+        // function second(num,callback){
+        //     console.log("this is second function");
+        //     callback(num);
+        // }
+
+        // second(40,(num)=>{
+        //     console.log("this is arrow function "+num);
+        // });
+        
+        // //problem of Asynchronous code 
+        // function getName(name){
+        //     setTimeout(()=>{
+        //         console.log("inside settimeout function");
+        //         return name;
+        //     },2000);
+        // }
+        // console.log("start");
+        // let name = getName("abhi");
+        // console.log(name);
+        // console.log("end");
+
+        //solution using callback function
+        function getName(name,callback){
+            setTimeout(()=>{
+                console.log("inside settimeout function");
+                callback(name);
+            },2000);
+        }
+
+        // function gethobbies(name,callback){
+        //     setTimeout(()=>{
+        //         console.log("hobbies function");
+        //         if(name=="abhi"){
+        //             callback(['cricket','coding']);
+        //         }
+        //     },2000);
+        // }
+        // // function gethobbyDetails(){
+
+        // // }
+        //  console.log("start");
+
+        // getName("abhi",(nam)=>{console.log(nam);
+        //     gethobbies(nam,(hobby)=>{
+        //         console.log(hobby);
+        //     })
+        // });
+       
+        // console.log("end");
+
+        //  let date = new Date();
+
+        // const promiseObj = new Promise((resolve,reject)=>{
+        //     let request = true;
+        //     if(request == true){
+        //         resolve("Promise Fulfilled !");
+        //     }else{
+        //         reject("Promise Denied/Reject");
+        //     }
+        // });
+
+        // producing code ..
+
+        //  promise states  :-
+        // 1. pending - state - not complete nor denied 
+        // 2. fulfilled / complete / resolve - 
+        // 3. reject / not fulfilled - 
+
+        // 1. producing code
+        //2. consuming code
+        
+    </script>
+</body>
+</html>
