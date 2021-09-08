@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promises Async and await.</title>
+</head>
+<body>
+    <script>
+        //Promise
+
+        //1. pending 
+        //2. resolved, fulfilled
+        //3. reject 
+
+       // let date = new Date();
+        
+    //    let promiseObj = new Promise(executor function );
+
+    //producing code
+    // let promiseObj = new Promise((resolve,reject)=>{
+    //     let req  = true;
+    //     if(req == true){
+    //         resolve(10);
+    //     }else{
+    //         reject("Promise rejected");
+    //     }
+    // });
+    //consuming code
+   //console.log(promiseObj);
+    // promiseObj.then(
+    //     (value)=>{       
+    //         console.log(value);     
+    //        return value+10;
+    //     }
+    // ).then((value)=>{
+    //     console.log(value);
+    //     return value+30;
+    // }).then((value)=>{
+    //      throw new Error("Custom error");
+    // }).catch((error)=>{
+    //     console.log(error);
+    // }).finally(()=>{
+    //     console.log("this is finally block");
+    // })
+
+    //  promise   - 1.producing code  2. consuming code 
+
+
+
+
+
+     function getname(name){
+            return new Promise((resolve,reject)=>{
+                setTimeout(()=>{
+                    console.log("inside setTimeout");
+                    resolve(name);
+                },2000)
+            })
+        }
+        function getHobbies(name){
+            return new Promise((resolve,reject)=>{
+                setTimeout(()=>{
+                if(name == "abhi"){
+                console.log("inside hobbies setTimeout");
+                resolve(["cricket","coding"]);
+                }
+            },2000)
+            })
+        }
+
+        console.log("start");
+        //  getname("abhi").then((name)=>{
+        //     console.log(name);
+        //     return getHobbies(name);
+        //  }).then((hobby)=>{
+        //     console.log(hobby);
+        //  }).catch((error)=>{
+        //      console.log(error);
+        //  })
+        
+        async function show(){
+           try{
+                let promiseObj = await getname("abhi");
+                console.log(promiseObj);
+                let promiseObj2 = await getHobbies(promiseObj); 
+                console.log(promiseObj2);
+           }catch{
+                console.log(error);
+           }
+        }
+        show();
+        console.log("end");
+        
+    </script>
+</body>
+</html>
