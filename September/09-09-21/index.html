@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <style>
+       
+    </style>
+</head>
+<body>
+    <p id="para">
+        this is h1 tag
+        <h1 id="head">this is hello</h1>
+    </p>
+    <button id="btn" class="click">click me</button>
+    <script src="jquery.js"></script>
+    <script>
+      //  window.alert("hello world");
+        //  jquery library  
+        // johan resig 26 aug 2006
+
+        // main advantages 
+        //1.easy dom manipulation
+        //2.easy css manipulation
+        //3.AJAX ()
+        //4. short selectors
+        //5. cross plateform 
+        //6. Effect and Animations easy way 
+
+        // there two ways to use jQuery 
+        //1. download jQuery file
+        //2. by using it's CDN
+        //content delivery network - google ,  microsoft , 
+        
+        //jQuery operating components 
+        // 1. access specifier
+          //  $()
+        // 2.event 
+            // 1.primary  event
+            //     ready()
+            // 2.secondary event
+            //     click dbclick change 
+            // 3.action event 
+            //     hide show fadeIn 
+
+        //jQuery Syantax
+                // const btn = document.getElementById("btn");
+               // const btnC = document.getElementsByClassName("click");
+               //const button = document.getElementsByTagName("button");
+                $(document).ready(function(){
+                   $("button").dblclick(function(){
+                        let num = 30;
+                        document.write(num);
+                        window.alert("hello world");
+                   });
+                });
+
+                // $(document).ready(function(){
+
+                // });
+                // $().event();
+
+    </script>
+</body>
+</html>
