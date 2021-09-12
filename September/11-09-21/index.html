@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        span{
+            font-size: 100px;font-family: sans-serif;text-shadow: 3px 5px 9px black;color: rgb(20, 129, 172);
+            font-weight: bold;
+            text-align: center;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div style="width: 100%;height: 200px;">
+        <center>
+    <span id="a">A</span>
+    <span id="b">B</span>
+    <span id="h">H</span>
+    <span id="i">I</span>
+</center>
+    </div>
+    <button id="btn" style="font-size: 40px;">start Animation</button>
+
+    <script>
+        // jQuery opearating component 
+        // 1. access specifier (selectors)  $()
+        // 2. events :- 
+            // primary events  .event(function(){  - ready()
+
+           // })
+            //secondary events - click dblclick 
+            //action events  // effects
+           
+        
+           
+        //    $(document).ready(function(){
+        //      $("#btn").click(function(){
+        //         window.alert("hello world");
+        //      });
+        // });
+
+        // const btn = document.getElementById("btn");
+        // console.log(btn);
+        $(document).ready(function(){
+       $("#btn").click(function(){
+           //1 .hide();
+          //  $("span/span").hide();
+            //2.show()
+            //$("span/span").show("1000");
+            //3.toggle()
+            //$("span/span").toggle("slow");
+
+            //4.fadeIn()
+            //$("span/span").fadeIn("slow");
+            //5.fadeOut()
+           // $("span/span").fadeOut("slow");
+           //6.fadeToggle()
+            //$("span/span").fadeToggle("slow");
+           //$("span/span").fadeTo("slow","1");
+
+            //7.slideUp();
+            //$("span/span").slideUp("1000");
+            //8.slideDown()
+            //$("span/span").slideDown("slow");
+            //9slideToggle()
+            //$("span/span").slideToggle("slow");
+
+
+            $("#a").show("slow",function(){
+                $("#b").show("slow",function(){
+                    $("#h").show("slow",function(){
+                        $("#i").show("slow");
+                    });
+                });
+            });
+       });
+});
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
