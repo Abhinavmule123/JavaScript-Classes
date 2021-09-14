@@ -12,6 +12,7 @@
             font-weight: bold;
             text-align: center;
             display: none;
+            float: left;
         }
     </style>
 </head>
@@ -51,7 +52,7 @@
            //1 .hide();
           //  $("span/span").hide();
             //2.show()
-            //$("span/span").show("1000");
+            //$("span/span").show(1000);
             //3.toggle()
             //$("span/span").toggle("slow");
 
@@ -71,14 +72,21 @@
             //$("span/span").slideToggle("slow");
 
 
-            $("#a").show("slow",function(){
-                $("#b").show("slow",function(){
-                    $("#h").show("slow",function(){
-                        $("#i").show("slow");
+            $("#a").toggle("slow",function(){
+                $("#b").toggle("slow",function(){
+                    $("#h").toggle("slow",function(){
+                        $("#i").toggle("slow");
                     });
                 });
             });
        });
+       attr 
+       addClass
+       removeClass
+       toggleClass
+       text()
+       html()
+       val()
 });
     </script>
     <script src="script.js"></script>
