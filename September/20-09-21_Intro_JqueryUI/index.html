@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro jQuery-UI</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+</head> 
+<body>
+    <div style="width: 700px;height: 700px;border: 2px solid red;margin: 50px auto;" class="container1"> 
+    <div style="width: 500px;height: 500px;border: 2px solid red;margin: 50px auto;" class="container"> 
+        <div style="width: 200px;height: 200px;background-color: brown;" class="box"> </div>
+    </div>
+</div>
+    <script>
+     //   jQuery ui - for user interface desiging   
+
+    //  categories of jQuery ui methods 
+    //  1. interactions 
+    //  2. widget 
+    //  3. effects 
+    //  4. utilities 
+
+    //1. interactions : -
+       // 1. draggable() : - any html elements can be draggable. 
+    
+    $(document).ready(function(){
+        $(".box").draggable({
+           containment : '.container1',
+           opacity : '0.7',
+           cursor : "move",
+           //cursorAt : {top :-20,left:-20},
+           revert : true,
+           helper : 'clone'
+        });
+    });
+    // 1. scrolling -  scroll , scrollSensitivity , scrollSpeed
+    // 2. constrain movement - axis , containment 
+    // 3. visual propertices - opacity , cursor, cursorAt , revert , hepler
+    
+    </script>
+</body>
+</html>
