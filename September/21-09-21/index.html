@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>droppable method jQuery-UI</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+<style>
+    div{
+        float: left;
+    }
+</style>
+</head> 
+<body>
+    <div style="background-color: brown;width: 200px;height: 200px;margin: 20px;" class="box"></div>
+    <div style="background-color: green;width: 200px;height: 200px;margin: 20px;" class="box"></div>
+    <div style="background-color: slateblue;width: 200px;height: 200px;margin: 20px;" class="box"></div>
+        <div class="container" style="width: 500px;height: 500px;margin: 20px;border: 2px solid red;margin-left: 150px;">      
+        
+        </div>
+       <script>
+        //    1. interactions 
+        //    2. widget 
+        //    3. effects - 
+        //    4. utilities 
+
+            $(document).ready(function(){
+                $(".box").draggable({
+                    // scroll : true,
+                    // scrollSensitivity : 100,
+                    // scrollSpeed : 200,
+
+                   //constrain movement  :
+                    // axis : 'x',
+                    // containment : ".container", 
+
+                    //visual propertices 
+                    //  opacity : '0.7',
+                     cursor : 'move',
+                    // cursorAt : {top:-20,left:-20},
+                    // revert : true,
+                   //revertDuration : 5000,
+                   // helper : 'clone',
+                    
+                    // snap : ".container",
+                    // snapTolerance : 100,
+                    //cancel : ".container",
+
+                    //stack  : "div",
+                });
+
+              
+
+            });
+
+
+          //  scroll - scroll 
+       </script>
+</body>
+</html>
