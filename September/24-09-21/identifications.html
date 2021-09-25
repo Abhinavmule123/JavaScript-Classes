@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identification</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+    <style>
+        h1{
+            font-size: 30px;
+            font-family: cursive;
+            color: rgb(5, 81, 83);
+        }
+        .pics{
+            width: 500px;
+            height: auto;
+            float: left;
+            border: 1px solid #ddd;
+            margin-top: 25px;
+        }
+        img{
+            width: 120px;
+            height: 120px;
+            margin: 20px;
+        
+        }
+        .animals-box{
+            width: 450px;
+            height: 500px;
+            border: 1px solid #ddd;
+            float: left;
+            margin: 25px;
+        }
+        .birds-box{
+            width: 450px;
+            height: 500px;
+            border: 1px solid #ddd;
+            float: left;
+            margin: 20px;
+        }
+    </style>
+</head> 
+<body>
+   <h1 align="center">Identify Animals and Birds </h1>
+   <hr>
+   <div class="pics">
+       <h1 align="center">All Pictures</h1> 
+       <hr>
+        <img src="imgs/animal1.jpg" alt="animal1" class="animals"> 
+        <img src="imgs/bird3.jpg" alt="bird3" class="birds">
+        <img src="imgs/animal4.jpg" alt="animal4" class="animals">
+        <img src="imgs/bird1.jpg" alt="bird1" class="birds">
+        <img src="imgs/animal3.jpg" alt="animal3" class="animals">
+        <img src="imgs/bird2.jpg" alt="bird2" class="birds">
+        <img src="imgs/animal2.jpg" alt="animal2" class="animals">
+        <img src="imgs/bird4.jpg" alt="bird4" class="birds">
+   </div>
+   <div class="animals-box">
+        <h1 align="center">Drop Animals Here</h1>
+        <hr>
+   </div>
+   <div class="birds-box">
+    <h1 align="center">Drop Birds Here</h1>
+    <hr>
+   </div>
+   <script>
+       $(document).ready(function(){
+            $(".pics img").draggable({
+                helper : 'clone',
+                cursor : "move",
+                revert : true,
+            }); 
+
+            $(".animals-box").droppable({
+                accept : ".animals",
+                drop : function(event,ui){
+                    $(".animals-box").append(ui.draggable);
+                }
+            });
+
+            $(".birds-box").droppable({
+                accept : ".birds",
+                drop : function(event,ui){
+                    $(".birds-box").append(ui.draggable);
+                }
+            });
+       });
+   </script>
+</body>
+</html>
