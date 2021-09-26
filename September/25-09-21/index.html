@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resizable method</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+    <style>
+        /* .ui-resizable-helper{
+            border: 5px dotted red;
+        } */
+
+        .data-list li{
+            padding: 20px;
+            border: 2px solid grey;
+            width: 40%;
+            margin: 5px;
+        }
+        .data-list{
+            list-style: none;   
+        }
+        .ui-selecting{
+            background-color: red;
+        }
+        .ui-selected{
+            background-color: yellow;
+        }
+    </style>
+    
+</head>
+<body>
+    <!-- <div style="width: 500px;height: 500px;border: 1px solid grey;" id="box2">
+        <div style="width: 200px;height: 200px;background-color: coral;" id="box"> </div>
+  
+    </div>
+    <p id="resize-text"> </p> -->
+
+
+    <ul class="data-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JAVASCRIPT</li>
+        <li>JAVA</li>
+        <li>PHP</li>
+    </ul>
+    <p id="count" style="font-size: 50px;padding: 10px;"></p>
+     <script>
+        //  $(document).ready(function(){
+        //     $("#box").resizable({
+        //         animate : true,
+        //         ghost : true,
+                //containment : "#box2",
+                // maxWidth : 500,
+                // maxHeight : 500,
+                // minWidth : 300,
+                // minHeight : 276,
+
+                  //  grid : 50,
+                 // alsoResize : "#box2",
+
+                // start : function(event,ui){
+                //      $("#box").css("background-color","red"); 
+                //  },
+                // resize : function(event,ui){
+                //     $("#resize-text").html("You are resizing the element");
+                //  },
+                //  stop : function(event,ui){
+                //     $("#resize-text").html("You are resizing Completed");
+                //  }
+
+        //     });
+        //  }); 
+
+        $(document).ready(function(){
+            $(".data-list").selectable({
+                stop : function(event,ui){
+                    let count = $(".ui-selected").length;
+                    $("#count").html(count+"  Element Selected");
+                }
+            });
+        });
+    </script>
+</body>
+</html>
