@@ -28,6 +28,7 @@
         .ui-selected{
             background-color: yellow;
         }
+        
     </style>
     
 </head>
@@ -41,12 +42,14 @@
 
     <ul class="data-list">
         <li>HTML</li>
-        <li>CSS</li>
+        <li class="nam">CSS</li>
         <li>JAVASCRIPT</li>
         <li>JAVA</li>
         <li>PHP</li>
     </ul>
     <p id="count" style="font-size: 50px;padding: 10px;"></p>
+
+    
      <script>
         //  $(document).ready(function(){
         //     $("#box").resizable({
@@ -57,7 +60,7 @@
                 // maxHeight : 500,
                 // minWidth : 300,
                 // minHeight : 276,
-
+              //aspectRatio : true, 
                   //  grid : 50,
                  // alsoResize : "#box2",
 
@@ -74,14 +77,8 @@
         //     });
         //  }); 
 
-        $(document).ready(function(){
-            $(".data-list").selectable({
-                stop : function(event,ui){
-                    let count = $(".ui-selected").length;
-                    $("#count").html(count+"  Element Selected");
-                }
-            });
-        });
+        
+    
     </script>
 </body>
 </html>

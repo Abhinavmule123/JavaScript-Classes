@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sortable , selectable , accordion</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+
+<style>
+    .langs,.lang{
+        list-style: none;
+    }
+    .langs li,.lang li{
+        padding: 20px;
+        width: 100%;
+        border: 2px solid grey;
+        margin-top: 5px;
+    }
+
+    .langs{
+        float: left;
+    }
+    .lang{
+        float: right;
+    }
+    /* .ui-selecting{
+        background-color: rgb(20, 163, 15);
+        color: white;
+    }
+    .ui-selected{
+        background-color: teal;
+        color: white;
+    } */
+    .shadow{
+        background-color: tomato;
+    }
+    /* .ui-accordion-header {
+        background-color: teal;
+        color: white;
+    } */
+    /* .ui-state-active{
+        background-color: teal;
+        color: white;
+    } */
+</style>
+</head>
+<body>
+    <!-- <ul class="langs">
+        <li class="demo">HTML</li>
+        <li class="demo">CSS</li>
+        <li class="demo">JAVASCRIPT</li>
+        <li>C</li>
+        <li>C++</li>
+    </ul>
+
+    <ul class="lang">
+        <li>PHP</li>
+        <li>ASP</li>
+        <li>JSP</li>
+        <li>PYTHON</li>
+        <li>JAVA</li>
+    </ul>
+
+    <p id="count"> </p> -->
+
+    <div class="info">
+        <h1>Click here to see more info</h1>
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore labore aliquid vel dolor molestiae eius aperiam praesentium, a assumenda hic numquam fugit necessitatibus nam, odio incidunt error voluptatum! Veniam, excepturi?
+            </p>
+        </div>
+
+        <h1>Click here to see more info</h1>
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore labore aliquid vel dolor molestiae eius aperiam praesentium, a assumenda hic numquam fugit necessitatibus nam, odio incidunt error voluptatum! Veniam, excepturi?
+            </p>
+        </div>
+
+        <h1>Click here to see more info</h1>
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore labore aliquid vel dolor molestiae eius aperiam praesentium, a assumenda hic numquam fugit necessitatibus nam, odio incidunt error voluptatum! Veniam, excepturi?
+            </p>
+        </div>
+    </div>
+
+
+    <script>
+        $(document).ready(function(){
+            // $(".langs").selectable({
+            //     stop : function(event,ui){
+            //         let count =  $(".ui-selected").length;
+            //         $("#count").html(count +"   Elements Selected");
+            //     },
+            //     // selected : function(event,ui){
+            //     //    $("#count").html("Selected elements"); 
+            //     // },
+            //     // unselected : function(event,ui){
+
+            //     //     $("#count").html($(".ui-selectee").length+"UnSelected elements"); 
+            //     // }
+            // });
+            
+            // $(".langs").sortable({
+            //     placeholder : "shadow",
+            //    // items : ".demo",
+            //    // cancel : ".demo",
+            //     //axis : 'y',
+            //   // connectWith : ".lang", 
+            //  //  dropOnEmpty : true,
+            // });
+
+            // $(".lang").sortable({
+            //     placeholder : "shadow",
+            //     connectWith : ".langs", 
+            // });
+
+
+            // $(".info").accordion({
+            //     collapsible : true,
+            //     active : false,
+            //     animate : 500,
+               
+            // });
+        });
+    </script>
+</body>
+</html>
