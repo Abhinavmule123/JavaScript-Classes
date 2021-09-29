@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>datepicker , menu ,addClass , removeClass,progressbar ,selectmenu,tooltip </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+<style>
+    /* #ui-datepicker-div{
+        background-color: black;
+        margin-left: 20px;
+    }
+    .ui-datepicker-header{
+        color: red;
+    } */
+    /* ul{
+        list-style: none;
+        width: 300px;
+    } */
+    /* .bg{
+        background-color: teal;
+    } */
+/* 
+    .ui-progressbar-value{
+        background-color: teal;
+    } */
+</style>
+</head>
+<body>  
+    <!-- <form>
+        <label for="datepicker">Choose Date :</label>
+       <input type="text" name="datepicker" id="datepicker" placeholder="dd-mm-yy">
+
+       <input type="text" name="result" id="result">
+    </form> -->
+
+
+    <!-- <ul id="menu">
+        <li>
+            <div><a href="#">Home</a></div>
+        </li>
+        <li>
+            <div><a href="#">Video</a></div>
+            <ul>
+                <li>
+                    <div><a href="#">Home</a></div>
+                </li>
+                <li>
+                    <div><a href="#">Video</a></div>
+                </li>
+                <li>
+                    <div><a href="#">Audios</a></div>
+                </li>
+                <li>
+                    <div><a href="#">About</a></div>
+                </li>
+        
+                <li>
+                    <div><a href="#">Contact</a></div>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <div><a href="#">Audios</a></div>
+        </li>
+        <li>
+            <div><a href="#">About</a></div>
+        </li>
+
+        <li>
+            <div><a href="#">Contact</a></div>
+        </li>
+    </ul> -->
+
+    <!-- <div style="width: 300px;height: 300px;border:1px solid black;" id="container"></div>
+    <br>
+    <button id="add-btn">Add Class</button> &nbsp; &nbsp;
+    <button id="remove-btn">
+        Remove Class
+    </button> -->
+
+
+    <!-- <div id="pbar"></div> -->
+
+    <!-- <form>
+        <select name="lang" id="lang">
+            <optgroup title="Languages" name="lang" label="languages">
+                <option value="">HTML</option>
+                <option value="">HTML</option>
+                <option value="">HTML</option>
+         </optgroup>
+            <optgroup title="Languages" name="lang" label="hello">
+                <option value="">HTML</option>
+                <option value="">HTML</option>
+            </optgroup>
+           
+        </select>
+    </form> -->
+
+
+    <h1 title="HYPER TEXT MARKUP LANGUAGE">HTML</h1>
+    <script>
+       //1.datepicker()
+       $(document).ready(function(){
+            // $("#datepicker").datepicker({
+            //     dateFormat : 'dd-mm-yy',
+            //     altField : "#result",
+            //     altFormat  :"DD dd-mm-yy",
+            //     //minDate : 0,  //0 - means current date ,-1 yesterday date ,1 tomrrow date
+            //   //  maxDate : 2,
+            //     // minDate : new Date("2021-05-05"),
+            //     // maxDate : new Date("2021-11-06"),
+            // });
+
+            // $("#menu").menu();
+
+            // $("#add-btn").click(function(){
+            //     $("#container").addClass("bg");
+            // });
+
+            // $("#remove-btn").click(function(){
+            //     $("#container").removeClass("bg");
+            // });
+
+
+            // $("#pbar").progressbar({
+            //     value : 50,
+            // });
+
+
+            // $("#lang").selectmenu();
+
+            $("h1").tooltip();
+       });
+    </script>
+</body>
+</html>

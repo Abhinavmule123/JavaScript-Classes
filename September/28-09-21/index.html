@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>button ,autocomplete , checkboxradio, tabs , dialog</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+</head>
+<body>
+    <!-- <button>Sign in</button> -->
+    <!-- <form>
+        <input type="search" style="padding: 20px;border:2px solid #ccc;width: 40%; font-size: 20px;">
+    </form> -->
+
+    <!-- <form>
+        Select Your Gender :
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male">
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female">
+
+        <input type="checkbox" name="langs" id="html">HTML
+        <input type="checkbox" name="langs" id="css">CSS
+    </form> -->
+<!-- <div class="tabs">
+    <ul class="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#images">Images</a></li>
+        <li><a href="#video">Video</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
+
+    <div id="home">
+        <p>This is home page content</p>
+    </div>
+    <div id="images">
+        <p>This images page content</p>
+    </div>
+    <div id="video">
+        <p>This video page content</p>
+    </div>
+    <div id="about">
+        <p>This about page content</p>
+    </div>
+</div> -->
+    <button id="btn">Click me</button>
+
+    <div id="box" title="Notification" style="display: none;">
+        <p>Are you sure , you want to delete data ?</p>
+    </div>
+    <script>
+        
+        $(document).ready(function(){
+            // $("button").button({
+            //     icon : "ui-icon-extlink",
+            //     iconPosition : "top",
+            //     showLabel : false,
+            // });
+            // let data = ["HTML","CSS","JAVA","PHP","PYTHON","C","C++"];
+            // $("input").autocomplete({
+            //     source :data,
+            // });
+
+            // $("input").checkboxradio({
+            //     icon :false,
+            // });
+
+
+            // $(".tabs").tabs({
+            // //    collapsible : true,
+            //     //active : 1,
+            //    // event : "dblclick",
+            //     // hide : {
+            //     //     effect : "fade",
+            //     //     duration : 1000,
+            //     // },
+            //     // show :{
+            //     //     effect : "explode",
+            //     //     duration : 500,
+            //     // }
+            // });
+
+
+            $("#btn").button().click(function(){
+                $("#box").dialog({
+                    draggable :false,
+                    resizable : false,
+                    // width : 500,
+                    // height: 500,
+
+                    buttons : {
+                        "Yes" : function(){
+                            $("#btn").remove();
+                            $("#box").dialog("close");
+                        },
+                        "No" : function(){
+                            $("#box").dialog("close");
+                        }
+                    },
+
+                    show : {
+                        effect : "explode",
+                        duration : 500,
+                    },
+
+                    hide : {
+                        effect : "puff",
+                        duration : 500,
+                    }
+                });
+            });
+        });
+            
+
+// 1.blind
+// 2. bounce
+// 3. clip
+// 4. drop
+// 5. explode
+// 6. fade
+// 7. fold
+// 8. highlight
+// 9. puff
+// 10. pulsate
+// 11. scale
+// 12. shake
+// 13. size
+// 14. slide
+        </script>
+</body>
+</html>
