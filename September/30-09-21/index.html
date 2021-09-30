@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tooltip remaining , spinner , slider ,toggle,effect </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+    <style>
+        #slider .ui-slider-range{
+            background-color: rgb(9, 88, 179);
+        }
+    </style>
+</head>
+<body>
+    <!-- <input type="text" name="name" id="name" title="message"> -->
+
+    <!-- <input type="number" name="num" id="num"> -->
+
+    <!-- <input type="text" name="spinner" id="spinner">
+
+    <button id="inc">Stepup</button>
+    <button id="dec">stepdown</button>
+    <button id="pageup">pageup</button>
+    <button id="pagedown">pagedown</button> -->
+
+    <!-- <input type="range" name="" id=""> -->
+
+    <!-- <div id="slider" style="width: 60%;margin-left: 1%;"></div> -->
+
+    <div style="width: 400px;height: 400px;box-shadow: 2px 7px 12px grey;margin: 20px;background-color: cornflowerblue;" class="box"></div>
+
+    <button id="effect-btn">Start Effect</button>
+    <script>
+        $(document).ready(function(){
+            // $("#name").tooltip({
+            //     track : true,
+            //   content: "<strong>Enter your name</strong>",
+            // });
+
+
+            // $("#spinner").spinner({
+            //     // min : -50,
+            //     // max : 50,
+            //     // step : 10,
+
+            // });
+
+            // $("#spinner").spinner({
+            //     icons : {
+            //         up : "ui-icon-person",
+            //         down : "ui-icon-extlink"
+            //     }
+            // });
+
+            // $("#inc").click(function(){
+            //     $("#spinner").spinner("stepUp");
+            // });
+
+            // $("#dec").click(function(){
+            //     $("#spinner").spinner("stepDown");
+            // });
+
+            // $("#pageup").click(function(){
+            //     $("#spinner").spinner("pageUp");
+            // });
+
+            // $("#pagedown").click(function(){
+            //     $("#spinner").spinner("pageDown");
+            // });
+            
+
+            // $("#slider").slider({
+            //     min : 10,
+            //     max: 200,
+            //     step : 1,
+            //     range : "min",
+            //     value: 100,
+            //     animate: true,
+            //     slide : function(){
+            //         console.log($("#slider").slider("value"));
+            //     },
+            //     change :function(){
+            //         console.log("complete sliding");
+            //     }
+            
+
+            // });
+            // $(".box").effect({
+            //         effect  :"explode",
+            //         duration : 1000,
+            //     })
+
+            $("#effect-btn").click(function(){
+                $(".box").toggle("explode",1000);
+
+                // $(".box").effect({
+                //     effect  :"explode",
+                //     duration : 1000,
+
+                // })
+            });
+        });
+        
+    </script>
+</body>
+</html>
