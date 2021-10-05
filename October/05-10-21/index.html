@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery mobile grid layout, navbar</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <style>
+       /* #menu .ui-btn{
+            padding: 15px;
+        } */
+    </style>
+</head>
+<body>
+    <!-- jquery mobile  - jquery  - SPA -  -->
+
+    <div data-role="page" id="home" >
+        <div data-role="header" data-position="fixed" data-theme="b"> 
+            <h1>Home page</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum amet animi consectetur cupiditate vel temporibus commodi, hic expedita porro accusamus, vitae ipsam, enim quia similique aliquid quos illum incidunt deserunt?   
+                <!-- ui-grid-solo ui-grid-(a-z)
+                ui-block-(a-) -->
+               <!-- <div class="ui-grid-b"> a-2 b-3 
+                    <div class="ui-block-a">
+                        <button>First btn</button>
+                    </div>
+                    <div class="ui-block-b">
+                        <button>second btn</button> 
+                    </div>
+                    <div class="ui-block-c">
+                        <button>third btn</button>   
+                    </div>
+               </div> -->
+                <a href="#about" class="ui-btn ui-btn-b" data-transition="flip">About page</a>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quibusdam unde at accusantium, magnam assumenda impedit? Quo similique aut dicta impedit accusamus expedita, ratione, eaque odio at architecto quaerat? Iure.
+                Ducimus sed, rem eligendi placeat harum magni excepturi error, minima quod officia soluta temporibus! Corporis quae id aspernatur iste fugiat rem? Placeat commodi debitis alias sint perspiciatis earum aut a.
+                Voluptate, neque quis repellat quaerat ut magnam tempore provident, eaque necessitatibus deserunt ad deleniti tempora nam quibusdam, veniam quia laboriosam impedit? Eos beatae nesciunt placeat quaerat totam! Asperiores, doloremque officia.
+                Temporibus accusantium dolorem exercitationem aliquid rerum sequi voluptatum! Ut a deleniti dignissimos, blanditiis porro maiores sapiente laudantium fugit quis harum ipsam architecto. Maiores modi perferendis nam illum fugit maxime hic!
+                Modi incidunt, pariatur dolorem asperiores reiciendis mollitia deleniti unde vero? Architecto, nisi eos sunt eligendi alias, quisquam ab magnam laudantium ad assumenda deleniti, ex error distinctio. Porro fugit maxime nulla!
+                Exercitationem accusamus, facilis hic sed, accusantium magnam ullam alias ipsam provident eveniet dolorem deserunt temporibus fugiat totam? Ducimus nulla expedita, beatae quasi accusantium ut et commodi eos provident iusto laborum!
+                Assumenda, odit expedita veniam explicabo dicta ducimus repudiandae voluptate culpa! Iure assumenda est fugit animi sed, unde laudantium tempore suscipit provident cumque, magni consequatur! Blanditiis quibusdam adipisci cum voluptatibus modi.
+                Totam suscipit perferendis quis quisquam repellat! Sunt eaque enim, atque omnis nemo amet. Exercitationem ipsum esse animi sequi necessitatibus eius sapiente, voluptatem molestias saepe, possimus, id expedita quidem omnis itaque.
+                Distinctio odit quia ipsam totam voluptas nostrum magnam velit esse! Qui dicta dolores ratione ab consequatur maxime optio sapiente, sequi doloribus dolorum, adipisci, tenetur aspernatur hic rerum? Quod, aut pariatur!
+                Distinctio veritatis expedita quam, eum, beatae culpa, neque quo laboriosam error id consequuntur consectetur. Dolore, enim natus accusamus delectus ducimus debitis provident ullam distinctio. Aperiam dicta autem voluptatibus possimus minima.
+            </p>
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme="b">
+            <!-- <h1>Developed by me !</h1> -->
+            <div data-role="navbar" data-grid="b" data-iconpos="bottom" align="center" id="menu">
+                <ul>
+                    <li><a href="#home" class="ui-btn-active" data-icon="home">Home</a></li>
+                    <li><a href="#video" data-icon="video">Video</a></li>
+                    <li><a href="#about" data-icon="info">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div data-role="page" id="about">
+        <div data-role="header">
+            <h1>about page</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+            <p>
+                I am developer.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum amet animi consectetur cupiditate vel temporibus commodi, hic expedita porro accusamus, vitae ipsam, enim quia similique aliquid quos illum incidunt deserunt?
+                <a href="#home" class="ui-btn" data-transition="turn">home page</a>
+            </p>
+        </div>
+        <div data-role="footer"  data-theme="b" data-position="fixed">
+            <div data-role="navbar" data-grid="b" data-iconpos="bottom" align="center" id="menu">
+                <ul>
+                    <li><a href="#home"  data-icon="home">Home</a></li>
+                    <li><a href="#video" data-icon="video">Video</a></li>
+                    <li><a href="#about" data-icon="info">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div data-role="page" id="video">
+        <div data-role="header">
+           <h1> Video page</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia itaque aliquam facilis dolor, aperiam reprehenderit minima, soluta dolores ducimus ad dignissimos quibusdam error veritatis animi? Labore iste quam nulla quae?
+
+                <a href="#home" class="ui-btn" data-transition="pop">home page</a>
+            </p>
+        </div>
+        <div data-role="footer" data-theme="b" data-position="fixed">
+            <div data-role="navbar" data-grid="b" data-iconpos="bottom" align="center" id="menu">
+                <ul>
+                    <li><a href="#home" class="ui-btn-active" data-icon="home">Home</a></li>
+                    <li><a href="#video" data-icon="video">Video</a></li>
+                    <li><a href="#about" data-icon="info">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
