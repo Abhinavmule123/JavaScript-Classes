@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery pannel,tabs</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        #heading .ui-link,#menu .ui-btn{
+            background-color: inherit !important;
+            border: none !important;
+            box-shadow: none !important;
+        }
+
+        #menu .ui-panel-inner{
+            padding: 0;
+        }
+        #menu .ui-btn{
+            background-color: inherit;
+            border: none;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+            padding: 8px;
+        }
+        #menu .ui-link{
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+   <!-- <div data-role="page" id="homepage">
+        <div data-role="header" data-theme="b" data-position="fixed">
+           <h1>HOMEPAGE</h1>
+        </div>
+        <div data-role="main" class="ui-content" >
+           <div data-role="tabs" id="tabs">
+                <div data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+                        <li><a href="#video" data-icon="video">Video</a></li>
+                        <li><a href="#audio" data-icon="audio">Audio</a></li>
+                    </ul>
+                </div>
+
+
+                <div id="home">
+                   
+                        <h1>This is homepage</h1>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum harum a exercitationem? Ullam, corrupti quos optio inventore fugiat alias sint veritatis accusamus nobis libero earum possimus maxime perspiciatis voluptas debitis?
+                    </p>
+                </div>
+
+                <div id="video">
+                   
+                    <h1>This is video page</h1>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum harum a exercitationem? Ullam, corrupti quos optio inventore fugiat alias sint veritatis accusamus nobis libero earum possimus maxime perspiciatis voluptas debitis?
+                </p>
+            </div>
+                <div id="audio">
+                   
+                    <h1>This is audio page</h1>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum harum a exercitationem? Ullam, corrupti quos optio inventore fugiat alias sint veritatis accusamus nobis libero earum possimus maxime perspiciatis voluptas debitis?
+                </p>
+            </div>
+           </div>
+            
+        </div>
+        <div data-role="footer" data-theme="b" data-position="fixed">
+            <h1>Footer data</h1>
+        </div>
+   </div> -->
+
+   <div data-role="page" id="home">
+        <div data-role="panel" id="menu"  data-display="overlay">
+            <div class="ui-grid-solo">
+                <div class="ui-block-a" style="background-color: #2874F0;height: 50px;padding-top: 8px;" >
+                    <a href="#" class="ui-btn" style="color: white;font-size: 18px;text-decoration: none;text-align: left;margin: 0;">
+                        <i class="fa fa-user"></i>&nbsp;
+                        Abhinav Mule
+                        <a href="#menu" data-relation="close" class="ui-icon-delete ui-btn-right ui-btn-icon-notext" style="margin-top: 8px;">close</a>
+                    </a>
+                </div>
+
+                <a href="#" data-role="button"><i class="fa fa-female"></i>&nbsp; Women's</a>
+                <a href="#" data-role="button"><i class="fa fa-user"></i>  &nbsp;Men</a>
+                <a href="#" data-role="button"><i class="fa fa-child"></i> &nbsp;Kid</a>
+                <a href="#" data-role="button"><i class="fa fa-home"></i>&nbsp;Home and Living</a>
+                <a href="#" data-role="button"><i class="fa fa-mobile"></i>&nbsp;Gadget</a>
+            <div data-role="footer" data-theme="b" data-position="fixed">
+                 <h1>SHARE ON FACEBOOK</h1>
+            </div>
+            </div>
+        </div>
+
+
+       <div data-role="header" style="background-color: #2874F0;height: 50px;" id="heading">
+            <a href="#menu" style="color: white;">
+                <i class="fa fa-bars" style="font-size: 18px;"></i>&nbsp; &nbsp;
+                 <span style="  font-size: 20px;
+                ">Flipkart</span></a>
+       </div>
+       <div data-role="main" class="ui-content">
+
+       </div>
+   </div>
+
+
+
+
+
+
+
+
+
+    <!-- <div class="ui-grid-b">
+                <div class="ui-block-a">
+                    <button>hello</button>
+                </div>
+                <div class="ui-block-b">
+                    <button>hello</button>
+                </div>
+                <div class="ui-block-c">
+                    <button>hello</button>
+                </div>
+            </div> -->
+</body>
+</html>
