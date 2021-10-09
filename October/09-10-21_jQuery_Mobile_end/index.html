@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>  
+<body>
+
+    <div data-role="page" id="page1">
+        <div data-role="header">
+            <h1 id="head">Welcome to website</h1>
+            <!-- <button id="btn-t">click</button> -->
+        </div>
+        <div data-role="main" class="ui-content">
+            <p id="para">This is first page
+
+                <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum aliquid nemo quidem in, possimus, reiciendis, maxime quam enim non quae excepturi temporibus quod error commodi omnis minima hic similique deserunt.
+            </p> 
+            <a href="#page2">second page</a>
+           
+        <div data-role="footer" data-position="fixed">
+            <h1>Developed by me !</h1>
+        </div>
+    </div>
+
+    <div data-role="page" id="page2">
+        <div data-role="header">
+            <h1>Welcome to website</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+            <p>This is second page</p>
+            <a href="#page1">first page</a>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h1>Developed by me !</h1>
+        </div>
+    </div>
+    <!-- page -  1. pagebeforecreate , pagecreate, pagebeforeshow ,pageshow , pagebeforehide , pagehide
+    scroll - scrollstart, scrollstop
+    touch - tap , swipe , swipeleft, swiperight
+    normal js event -  all js events like click , dbclick , mouseover , mouseleave etc 
+    <script>
+        // $(document).on("pagebeforecreate",function(){
+        //     alert("your page initialize now");
+        // });
+
+        // $(document).on("pagecreate",function(){
+        //     alert("page is created");
+        // });
+
+        // $(document).on("pagebeforeshow","#page2",function(){
+        //     alert("page2 will be showing now ..");
+        // });
+
+        // $(document).on("pageshow","#page2",function(){
+        //     alert("page2 is showing now ..");
+        // });
+
+        
+        // $(document).on("pagebeforehide","#page2",function(){
+        //     alert("page2 will be hiding now ..you will see page1 now");
+        // });
+
+        // $(document).on("pagehide","#page2",function(){
+        //     alert("page2 hidden ..you are seeing page1 now");
+        // });
+
+
+        // $(document).on("scrollstart",function(){
+        //     alert("scrolling start now !");
+        // });
+
+        // $(document).on("scrollstop",function(){
+        //     alert("scrolling stop now !");
+        // });
+
+        // $("#btn-t").on("tap",function(){
+        //     alert("you tap on button");
+        // });
+
+        // $("#para").on("swipe",function(){
+        //     alert("you are swiping now !");
+        // });
+
+        
+        // $("#para").on("swipeleft",function(){
+        //     alert("you are swiping left now !");
+        // });
+
+        
+        // $("#para").on("swiperight",function(){
+        //     alert("you are swiping right now !");
+        // });
+        -->
+
+        <!-- <script>
+            $("#para").on("click",function(){
+                alert("you have clicked on para");
+            });
+    </script> -->
+</body>
+</html>
