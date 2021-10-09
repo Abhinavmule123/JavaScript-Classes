@@ -30,6 +30,14 @@
         #menu .ui-link{
             text-align: left;
         }
+        #toolbar i{
+            font-size: 18px;
+            color: white;
+        }
+        #toolbar a{
+            margin:0;
+            margin-top: 5px;
+        }
     </style>
 </head>
 <body>
@@ -82,7 +90,7 @@
         <div data-role="panel" id="menu"  data-display="overlay">
             <div class="ui-grid-solo">
                 <div class="ui-block-a" style="background-color: #2874F0;height: 50px;padding-top: 8px;" >
-                    <a href="#" class="ui-btn" style="color: white;font-size: 18px;text-decoration: none;text-align: left;margin: 0;">
+                    <a href="#" class="ui-btn" style="color: white;font-size: 18px;text-decoration: none;text-align: left;margin: 0;text-shadow: none;">
                         <i class="fa fa-user"></i>&nbsp;
                         Abhinav Mule
                         <a href="#menu" data-relation="close" class="ui-icon-delete ui-btn-right ui-btn-icon-notext" style="margin-top: 8px;">close</a>
@@ -104,8 +112,17 @@
        <div data-role="header" style="background-color: #2874F0;height: 50px;" id="heading">
             <a href="#menu" style="color: white;">
                 <i class="fa fa-bars" style="font-size: 18px;"></i>&nbsp; &nbsp;
-                 <span style="  font-size: 20px;
-                ">Flipkart</span></a>
+                 <span style="font-size: 20px;text-shadow: none;
+                ">Flipkart</span>
+            </a>
+            <div class="ui-btn-right" id="toolbar">
+                <div class="ui-grid-c">
+                    <div class="ui-block-a"><a href="#" data-role="button"><i class="fa fa-bell"></i></a></div>
+                    <div class="ui-block-b"><a href="#" data-role="button"><i class="fa fa-search"></i></a></div>
+                    <div class="ui-block-c"><a href="#" data-role="button"><i class="fa fa-id-badge"></i></a></div>
+                    <div class="ui-block-d"><a href="#" data-role="button"><i class="fa fa-shopping-bag"></i></a></div>
+                </div> 
+                </div> 
        </div>
        <div data-role="main" class="ui-content">
 
